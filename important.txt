@@ -1,7 +1,7 @@
 修改了编译过程
 1.不需要在根目录执行. build/envsetup.sh，改为在device目录(或者你的机型所在目录)执行. setenv.sh
 2.请修改makefile里面的author，channel不需要修改
-3.在device（即当前机型目录）添加custom_sign_config.mk用于制定机型目录/custom-update/system/apps需要签名的apk
+3.在device（即当前机型目录）添加custom_resign_app.mk用于制定机型目录/custom-update/system/apps需要签名的apk
    格式如下所示（XXX为apk名字）：
    
 APPS_CUSTOM_ORIGIN:=  xxx.apk \
